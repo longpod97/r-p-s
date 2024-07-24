@@ -33,9 +33,9 @@ function getCompChoice() {
 } */
 
 function playRound(player, computer) {
-    console.log("Your choice: " + human);
-    console.log("Computer choice: " + comp);
-    if (player == computer) {
+    console.log("Your choice: " + player);
+    console.log("Computer choice: " + computer);
+    if (player === computer) {
         console.log("It's a draw!")
     } else if (player === "rock" && computer === "paper") {
         console.log("You lose, paper beats rock");
