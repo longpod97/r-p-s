@@ -3,11 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="rps.js"></script>
+        <script src="rps.js" defer></script>
         <title>Rock Paper Scissors Game</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <p>hello world
-        </p>
+        <div class="box">
+            <div class="text" id="player-text">Choose your weapon!</div>
+            <div class="text" id="computer-text"></div>
+            <div class="text" id="result"></div>
+            <div id="buttons">
+                <button class="button" id="rock">Rock</button>
+                <button class="button" id="paper">Paper</button>
+                <button class="button" id="scissors">Scissors</button>
+            </div>
+        </div>
+        <div class="scores">
+            <div class ="score" id="playscore"><p>Your Score: <span id="player-score">0</span></p></div>
+            <div class="score" id="compscore"><p>Computer Score: <span id="computer-score">0</span></p></div>
+        </div>
+        <div class="scores" id="next">
+            <button id="next-game">Play again?</button>
+        </div>
     </body>
 </html>
